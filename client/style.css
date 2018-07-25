@@ -1,0 +1,25 @@
+/* Styles go here */
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 19%;
+    padding: 1%;
+}
+
+/* Clearfix (clear floats) */
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the 5 columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
